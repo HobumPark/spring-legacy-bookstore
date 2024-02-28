@@ -1,0 +1,512 @@
+@charset "UTF-8";
+
+
+#wrap{
+	width:100%;
+	height:3450px;
+	background-color:aqua;
+	margin:0 auto;
+}
+
+#wrap>#contents{
+	width:1200px;
+	height:2800px;
+	background-color:papayawhip;
+	margin:0 auto;
+}
+/*교보문고 대구점 소개*/
+#contents>#daegu-introduce{
+	width:1200px;
+	height:500px;
+	background-color:rosybrown;
+	margin:0 auto;
+}
+#daegu-introduce>#daegu-desc{
+	float:left;
+	width:30%;
+	height:500px;
+	background-color:salmon;
+	
+	position:relative;
+	z-index:2;
+}
+#daegu-desc>#head{
+	width:100%;
+	height:100px;
+	background-color:sienna;
+	padding:10px 20px;
+	box-sizing:border-box;
+}
+#daegu-desc>#head>h1{
+	font-size:56px;
+	display:inline-block;
+}
+#daegu-desc>#head>#concern{
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	border:1px solid #777;
+	display:inline-block;
+	text-align:center;
+	
+	position:relative;
+	top:-10px;
+	left:5px;
+}
+#daegu-desc>#head>#concern>img{
+	width:70%;
+	height:70%;
+	position:relative;
+	top:5px;
+}
+
+#daegu-desc>#mid{
+	width:100%;
+	height:100px;
+	background-color:silver;
+}
+#daegu-desc>#mid>ul{
+	display:block;
+}
+#daegu-desc>#mid>ul>li{
+	font-size:12px;
+	margin-right:9px;
+	float:left;
+}
+
+#daegu-desc>#bottom{
+	width:100%;
+	height:100px;
+	background-color:skyblue;
+	padding:20px 20px;
+	box-sizing:border-box;
+}
+
+#daegu-desc>#bottom>button{
+	border:none;
+	border-radius:20px;
+	font-weight:bold;
+}
+#daegu-desc>#bottom>#map-button{
+	width:118px;
+	height:44px;
+	background-color:#8F603D;
+	color:#ffffff;
+}
+#daegu-desc>#bottom>#inquire-button{
+	width:180px;
+	height:44px;
+	background-color:#F2F2F2;
+	color:#333333;
+}
+
+#daegu-introduce>#daegu-image-area{
+	float:left;
+	width:70%;
+	height:500px;
+	background-color:sandybrown;
+}
+#daegu-introduce>#daegu-image-area>img{
+	position:relative;
+	top:50px;
+	left:-330px;
+}
+
+/*교보문고 대구점 탭메뉴 정보*/
+#contents>#daegu-tab{
+	width:1200px;
+	height:1500px;
+	background-color:royalblue;
+	margin:0 auto;
+}
+
+#daegu-tab>#tab-btn{
+	width:1200px;
+	height:70px;
+	background-color:slateblue;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+#daegu-tab>#tab-btn>ul>li{
+	float:left;
+	width:100px;
+	height:70px;
+	padding-top:30px;
+	box-sizing:border-box;
+	background-color:indianred;
+	text-align:center;
+	cursor:pointer;
+	color:#777777;
+}
+#daegu-tab>#tab-btn>ul{
+	display:inline-block;
+}
+#daegu-tab>#tab-btn>#search-area{
+	float:right;
+	width:320px;
+	height:45px;
+	background-color:turquoise;
+	border-radius:10px;
+	padding:5px 5px;
+	box-sizing:border-box;
+	position:relative;
+	top:10px;
+	right:10px;
+}
+#search-area>input{
+	float:left;
+	width:260px;
+	height:30px;
+}
+#search-area>#search-btn{
+	float:left;
+	background:url("../../images/introduce/btn_ip_search.png");;
+	transform:scale(0.7);
+	width:45px;
+	height:45px;
+	border:none;
+	
+	position:relative;
+	top:-5px;
+}
+
+
+/*탭메뉴 - 오시는 길*/
+#daegu-tab>#road{
+	width:1200px;
+	height:500px;
+	background-color:indigo;
+}
+
+#daegu-tab>#road>#map-area{
+	float:left;
+	width:60%;
+	height:500px;
+	background-color:springgreen;
+}
+#daegu-tab>#road>#map-area>#map{
+	position:relative;
+	top:10px;
+}
+
+#daegu-tab>#road>#map-area>h1{
+	font-size:30px;
+	background-color:seashell;
+}
+#daegu-tab>#road>#map-area>h2{
+	font-size:20px;
+	background-color:sienna;
+}
+
+#daegu-tab>#road>#desc{
+	float:left;
+	width:40%;
+	height:500px;
+	background-color:steelblue;
+}
+#daegu-tab>#road>#desc>#btn-area{
+	width:100%;
+	height:100px;
+	background-color:tan;
+	padding:30px 30px;
+	box-sizing:border-box;
+}
+#btn-area>button{
+	border:none;
+	border-radius:20px;
+	font-weight:bold;
+}
+#btn-area>#traffic{
+	width:105px;
+	height:44px;
+	background-color:#777777;
+	color:#ffffff;
+}
+#btn-area>#parking{
+	width:75px;
+	height:44px;
+	background-color:#F2F2F2;
+	color:#333333;
+}
+
+#daegu-tab>#road>#desc>#desc-area{
+	width:100%;
+	height:300px;
+	background-color:thistle;
+	padding:30px 30px;
+	box-sizing:border-box;
+}
+#desc-area>ul>li>span{
+	font-weight:bold;
+	color:#333333;
+}
+
+/*탭메뉴 - 내부 안내도*/
+#daegu-tab>#inner-info{
+	width:1200px;
+	/*height:700px;*/
+	height:auto;
+	background-color:indianred;
+}
+#inner-info>h1{
+	width:1200px;
+	height:8%;
+	background-color:darkorange;
+	margin-bottom:2px;
+	padding-left:20px;
+	box-sizing:border-box;
+}
+#inner-info>#inner-info-contents{
+	width:1200px;
+	/*height:90%;*/
+	height:auto;
+	
+	background-color:darkblue;
+}
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    clear:both;
+}
+
+#inner-info-contents>#inner-info-desc{
+	float:left;
+	width:40%;
+	height:100%;
+	background-color:gray;
+	margin-right:2px;
+	padding-left:20px;
+	box-sizing:border-box;
+	
+	border-top:1px solid #000;
+	
+	position:relative;
+	top:20px;
+}
+#inner-info-desc>div{
+	width:95%;
+	height:95%;
+	background-color:goldenrod;
+	display:none;
+}
+#inner-info-desc>div:first-child{
+	display:block;
+}
+#inner-info-desc>div>ul>li{
+	width:450px;
+	height:50px;
+	background-color:#888;
+	margin-bottom:2px;
+}
+#inner-info-desc>div>ul>li>span{
+	padding:15px 10px;
+	box-sizing:border-box;
+	float:left;
+	background-color:#777;
+}
+#inner-info-desc>div>ul>li>span:first-child{
+	width:30%;
+	height:100%;
+	margin-right:3px;
+}
+#inner-info-desc>div>ul>li>span:nth-child(2){
+	width:68%;
+	height:100%;
+}
+
+
+#inner-info-contents>#inner-info-floor{
+	float:left;
+	width:58%;
+	/*height:100%;*/
+	height:auto;
+	
+	background-color:gray;
+}
+#inner-info-floor>#inner-info-tab-btn{
+	width:100%;
+	height:50px;
+	background-color:greenyellow;
+	margin-bottom:10px;
+	
+	padding-left:20px;
+	box-sizing:border-box;
+}
+
+.active{
+	background-color:brown;
+	color:#fff !important;
+}
+
+#inner-info-tab-btn>button{
+	width:220px;
+	height:50px;
+	color:#767676;
+	float:left;
+	cursor:pointer;
+}
+
+#inner-info-floor>#inner-info-tab-contents{
+	width:100%;
+	/*height:85%;*/
+	height:auto;
+	background-color:greenyellow;
+	padding-left:20px;
+	box-sizing:border-box;
+}
+#inner-info-floor>#inner-info-tab-contents>div{
+	width:95%;
+	/*height:95%;*/
+	height:auto;
+	
+	background-color:goldenrod;
+	display:none;
+}
+#inner-info-floor>#inner-info-tab-contents>div:first-child{
+	display:block;
+}
+#inner-info-tab-contents>div:first-child>img{
+	width:650px;
+	height:870px;
+}
+#inner-info-tab-contents>div:nth-child(2)>img{
+	width:650px;
+	height:570px;
+}
+#inner-info-tab-contents>div:nth-child(3)>img{
+	width:650px;
+	height:570px;
+}
+
+/*탭메뉴 - 행사/소식*/
+#daegu-tab>#festival{
+	width:1200px;
+	height:500px;
+	background-color:darkred;
+}
+#festival>#festival-head{
+	width:1200px;
+	height:50px;
+	background-color:lightblue;
+}
+
+#festival-head>h1{
+	width:1200px;
+	height:8%;
+	background-color:darkorange;
+	margin-bottom:2px;
+}
+#festival-head>span{
+	float:right;
+	position:relative;
+	right:20px;
+	top:0px;
+}
+#festival-head>span>a{
+	color:#000;
+	position:relative;
+}
+#festival-head>span>a>img{
+	position:relative;
+	top:0px;
+}
+
+#festival>#festival-contents{
+	width:1200px;
+	height:90%;
+	background-color:darkblue;
+}
+#festival-contents>ul>li>a{
+	display:block;
+	height:100px;
+	color:#767676;
+	font-weight:bold;
+}
+#festival-contents>ul>li>a>span{
+	float:left;
+	height:100px;
+	text-align:center;
+	padding-top:15px;
+	box-sizing:border-box;
+}
+#festival-contents>ul>li>a>span:first-child{
+	width:10%;
+	height:100%;
+	background-color:lightcoral;
+}
+#festival-contents>ul>li>a>span:nth-child(2){
+	width:50%;
+	height:100%;
+	background-color:lightcyan;
+}
+#festival-contents>ul>li>a>span:nth-child(3){
+	width:10%;
+	height:100%;
+	background-color:lightgreen;
+}
+#festival-contents>ul>li>a>span:nth-child(4){
+	width:30%;
+	height:100%;
+	background-color:lightpink;
+}
+
+
+#festival-contents-header>a{
+	display:block;
+	height:50px;
+	color:#767676;
+	font-weight:bold;
+}
+#festival-contents-header>a>span{
+	float:left;
+	height:50px;
+	text-align:center;
+	padding-top:15px;
+	box-sizing:border-box;
+}
+#festival-contents-header>a>span:first-child{
+	width:60% !important;
+	height:100%;
+	background-color:mediumorchid;
+}
+#festival-contents-header>a>span:nth-child(2){
+	width:10% !important;;
+	height:100%;
+	background-color:mediumseagreen;	
+}
+#festival-contents-header>a>span:nth-child(3){
+	width:30% !important;;
+	height:100%;
+	background-color:mediumturquoise;	
+}
+#festival-contents>li>a{
+	display:block;
+	width:1100px;
+	height:50px;
+	background-color:lightgreen;
+}
+
+/*탭메뉴 - 시설/서비스*/
+#daegu-tab>#service{
+	width:1200px;
+	height:500px;
+	background-color:darkorange;
+}
+#service>#service-head{
+	width:1200px;
+	height:50px;
+	background-color:lightblue;
+}
+
+#service-head>h1{
+	width:1200px;
+	height:8%;
+	background-color:darkorange;
+	margin-bottom:2px;
+}
+#service>#service-contents{
+	width:1200px;
+	height:90%;
+	background-color:darkblue;
+}
+

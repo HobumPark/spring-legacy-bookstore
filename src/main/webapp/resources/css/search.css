@@ -1,0 +1,225 @@
+@charset "EUC-KR";
+*{
+margin:0;
+padding:0;	
+}
+ul{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+/*검색결과 화면 와이어 프레임*/
+#search-wrap{
+	width:1200px;
+	height:1000px;
+	background-color:aqua;
+	margin:0 auto;
+}
+
+#search-wrap>#header{
+	width:1200px;
+	height:200px;
+	background-color:orange;
+}
+
+#search-wrap>#contents{
+	width:1200px;
+	height:700px;
+	background-color:orchid;
+}
+
+/*책 한권에 대한 css*/
+#search-wrap>#contents>#book{
+	width:1200px;
+	height:200px;
+	background-color:teal;
+	margin-bottom:10px;
+}
+
+#search-wrap>#contents>#book>#book-left{
+	background-color:paleblue;
+	width:150px;
+	height:200px;
+	float:left;
+}
+
+#search-wrap>#contents>#book>#book-left>img{
+	width:91px;
+	height:145px;
+}
+
+#book-left>.bar{
+	width:1px;
+	height:10px;
+	background-color:#777;
+	display:inline-block;
+}
+
+#search-wrap>#contents>#book>#book-right{
+	width:1050px;
+	height:200px;
+	background-color:#555;
+	float:left;
+}
+
+#search-wrap>#contents>#book>#book-right>#book-desc-inline1{
+	float:left;
+	width:500px;
+	height:200px;
+	background-color:crimson;
+}
+
+#book-right>#book-desc-inline1>#section1{
+	background-color:#666;
+}
+#book-right>#book-desc-inline1>#section2{
+	background-color:#777;
+}
+#book-right>#book-desc-inline1>#section3{
+	background-color:#888;
+}
+
+#search-wrap>#contents>#book>#book-right>#book-desc-inline2{
+	float:left;
+	width:200px;
+	height:200px;
+	background-color:indigo;
+}
+
+#book-desc-inline2>#section1{
+	background-color:olive;
+}
+#book-desc-inline2>#section2{
+	background-color:orangered;
+}
+#book-desc-inline2>#section3{
+	background-color:olivedrab;
+}
+
+#search-wrap>#contents>#book>#book-right>#book-desc-inline3{
+	float:left;
+	width:200px;
+	height:200px;
+	background-color:navy;
+}
+
+#book-desc-inline3>span:first-child{
+	background-color:gold;
+}
+#book-desc-inline3>span:nth-child(2){
+	background-color:goldenrod;
+}
+#book-desc-inline3>span:nth-child(2)>b{
+	font-weight:bold;
+	color:red;
+}
+
+#search-wrap>#contents>#book>#book-right>#book-desc-inline4{
+	float:left;
+	width:140px;
+	height:200px;
+	background-color:navajowhite;
+	text-align:center;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+#book-desc-inline4>#select-amount{
+	font-size:11px;
+}
+#book-desc-inline4>#select-amount>span{
+	display:inline-block;
+	width:10px;
+	height:20px;
+	background-color:coral;
+	position:relative;
+	top:4px;
+	left:-3px;
+}
+#book-desc-inline4>#select-amount>span>a{
+	display:block;
+	width:10px;
+	height:10px;
+}
+#book-desc-inline4>#select-amount>span>a>img{
+	display:block;
+	width:10px;
+	height:10px;
+}
+#book-desc-inline4>#select-amount>span>a:first-child{
+	margin-bottom:0px;
+}
+
+#book-desc-inline4>#select-amount>#item-input-count{
+	width:30px;
+	height:21px;
+}
+
+#book-desc-inline4>button{
+	width:96px;
+	height:25px;
+	font-size:11px;
+	margin-bottom:5px;
+}
+#book-desc-inline4>#baro{
+	margin-top:10px;
+	background-color: #778bae;
+    border: 1px solid #778bae;
+}
+#book-desc-inline4>#basket-save{
+	background-color: #5e6b9f;
+    border: 1px solid #5e6b9f;
+}
+#book-desc-inline4>#buy{
+	background-color: #7b8ed1;
+    border: 1px solid #7b8ed1;
+}
+#book-desc-inline4>#store-save{
+	background-color: #fff;
+    border: 1px solid #a0a0a0;
+}
+#book-desc-inline4>#compare-spec{
+	background-color: #fff;
+    border: 1px solid #a0a0a0;
+}
+
+#book>#book-right>#book-desc-inline3>span{
+	display:block;
+}
+
+#page-list{
+	width:100%;
+	height:40px;
+	background-color:lawngreen;
+	text-align:center;
+}
+
+#page-list>#page-list-inner{
+	display:inline-block;
+	background-color:green;
+}
+
+#page>a{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	border:1px solid black;
+	padding-top:7px;
+	text-align:center;
+	box-sizing:border-box;
+	text-decoration:none;
+	color:#333;
+}
+#page>a:hover{
+	background-color:#777;
+	color:#fff;
+}
+
+/*푸터 css*/
+#search-wrap>#footer{
+	width:1200px;
+	height:500px;
+	background-color:palegreen;
+}

@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/spring/com/controller/BoardController.java=UTF-8
+encoding//src/main/java/spring/com/controller/MemberController.java=UTF-8
+encoding//src/main/java/spring/com/dto/NoticeBoardVO.java=UTF-8
+encoding//src/main/java/spring/com/dto/UserBoardVO.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/board/noticeBoardMain.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/detail/bookDetailView.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/introduce/introduceDaegu.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/member/joinStep1.jsp=UTF-8

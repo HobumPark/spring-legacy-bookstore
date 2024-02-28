@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="spring.com.mapper.bookMapper">
+
+<select id="selectCount" resultType="int">
+        SELECT COUNT(*) from book;
+</select>
+
+<select id="selectCountByTitle" parameterType="String" resultType="int">
+        SELECT COUNT(*) from book where title LIKE CONCAT('%',#{title},'%');
+</select>
+
+<select id="selectBooksByTitle" parameterType="String" resultType="BookVO">
+        SELECT * FROM book where title LIKE CONCAT('%',#{title},'%');
+</select>
+
+<select id="selectCountByRegNo" parameterType="String" resultType="BookVO">
+        SELECT * FROM book where reg_no=#{regNo};
+</select>
+
+<!-- select * from book where title like '%철학%' limit 0,3; -->
+<select id="selectBooksByTitleLimit" parameterType="String" resultType="BookVO">
+        SELECT * FROM book where title LIKE CONCAT('%',#{title},'%') limit 0,10;
+</select>
+
+<!-- select * from book where title like '%철학%' limit 0,3; -->
+<select id="selectBooksByTitleLimitPage" parameterType="hashmap" resultType="BookVO">
+        SELECT * FROM book where title LIKE CONCAT('%',#{title},'%') limit #{page},10;
+</select>
+
+<!-- insert into book_basket(cart_id,book_cover,book_title,amount,user_id) values(1,"l9791190030922.jpg","소크라테스 익스프레스",1,'asdf1234'); -->
+<insert id="insertBasket" parameterType="spring.com.dto.BasketVO"> 
+insert into book_basket(book_cover,book_title,amount,user_id ) values ( #{bookCover},#{bookTitle},#{amount},#{userId} );
+</insert>
+
+<!-- select * from book_basket where user_id='asdf1234' -->
+<select id="selectBookBasketWhereUserId" parameterType="String" resultType="BasketVO">
+        select * from book_basket where userID=#{userID};
+</select>
+
+</mapper>

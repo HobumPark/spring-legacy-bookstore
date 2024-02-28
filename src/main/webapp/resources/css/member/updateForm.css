@@ -1,0 +1,124 @@
+@charset "EUC-KR";
+*{
+	margin:0;
+	padding:0;
+}
+#update-member-area{
+	width:100%;
+	height:800px;
+	background-color:aqua;
+}
+#update-member-area>h1{
+	color:green;
+	background-color:antiquewhite;
+	text-align:center;
+}
+
+#update-member-area-inner{
+	width:1200px;
+	height:600px;
+	background-color:aquamarine;
+	margin:0 auto;
+}
+#update-member-area-inner>form>div{
+	width:100%;
+	height:70px;
+	background-color:antiquewhite;
+	margin-bottom:1px;
+}
+#update-form>div>span:first-child{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:blanchedalmond;
+	font-size:24px;
+	padding:20px;
+	box-sizing:border-box;
+}
+#update-form>div>span:nth-child(2){
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:burlywood;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+#update-form>div>span:nth-child(2)>input{
+	padding-left:10px;
+	box-sizing:border-box;
+}
+/*입력창 행 설정*/
+#id-row input{
+	width:250px;
+	height:40px;
+}
+#pw-row input{
+	width:250px;
+	height:40px;
+}
+#pw-confirm-row input{
+	width:250px;
+	height:40px;
+}
+#name-row input{
+	width:250px;
+	height:40px;
+}
+#born-date-row input{
+	width:250px;
+	height:40px;
+}
+#email-row input{
+	width:150px;
+	height:40px;
+}
+#phone-number-row input{
+	width:150px;
+	height:40px;
+}
+#phone-number-row #phone-provider{
+	width:100px;
+	height:40px;
+	text-align:center;
+}
+#address-row{
+	height:150px !important;
+}
+#address-row #zonecode{
+	width:150px;
+	height:40px;
+	margin-bottom:10px;
+	background-color:gray;
+}
+#address-row #address{
+	width:350px;
+	height:40px;
+	background-color:gray;
+}
+#address-row #detail-address{
+	width:350px;
+	height:40px;
+}
+
+#update-btn{
+	width:200px;
+	height:50px;
+	background-color:#006BFF;
+	color:#fff;
+	border:none;
+	display:block;
+	margin:0 auto;
+}
+
+#id{
+	background-color:gray;
+}
+
+#name{
+	background-color:gray;
+}
+
+#bornDate{
+	background-color:gray;
+}

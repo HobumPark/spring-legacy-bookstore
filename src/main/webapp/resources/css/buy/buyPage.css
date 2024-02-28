@@ -1,0 +1,443 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+
+#buy-page-wrap{
+    width:1200px;
+    height:1300px;
+    background-color: aqua;
+    margin:0 auto;
+}
+
+#buy-page-header{
+    width:1200px;
+    height:100px;
+    background-color: aquamarine;
+    text-align: center;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+#buy-page-header>h1{
+    background-color: antiquewhite;
+}
+
+#buy-page-contents{
+    width:1200px;
+    /*height:1300px;*/
+    height:auto;
+    background-color: antiquewhite;
+}
+
+#buy-page-contents-inner{
+    width:1000px;
+    /*height:1300px;*/
+    height:auto;
+    background-color: blueviolet;
+    margin:0 auto;
+    padding:20px;
+    box-sizing: border-box;
+}
+#buy-page-contents-inner>div{
+    float:left;
+}
+/*구매페이지 왼쪽부분*/
+#buy-page-contents-left{
+    width:60%;
+    /*height:90%;*/
+    height:auto;
+    background-color: palegreen;
+    margin-right:20px;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+#buy-page-contents-left>div{
+    width:90%;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+/*주소 부분*/
+#buy-page-address{
+    height:250px;
+    background-color: cadetblue;
+}
+#buy-page-address>div{
+    width:100%;
+}
+#buy-page-address-head{
+    height:50px;
+    background-color: darkgoldenrod;
+    font-weight: bold;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-address-info{
+    height:100px;
+    background-color: darkcyan;
+}
+
+#buy-page-address-info>span{
+    display:block;
+    width:100%;
+    height:30px;
+    background-color: darkkhaki;
+    margin-bottom: 2px;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#buy-page-address-memo{
+    height:80px;
+    background-color: darkorange;
+    padding-top:10px;
+    box-sizing: border-box;
+}
+#buy-page-address-memo>select{
+    display:block;
+    width:90%;
+    height:40px;
+    border-radius: 5px;
+    padding-left:10px;
+    box-sizing: border-box;
+    font-size:20px;
+    margin:0 auto;
+}
+
+#buy-page-address-memo>input{
+    cursor: pointer;
+}
+#buy-page-address-memo>input,label{
+    position: relative;
+    left:30px;
+    top:5px;
+}
+
+/*구매자 부분*/
+#buy-page-buyer{
+    height:50px;
+    background-color: cornsilk;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-buyer>span{
+    font-weight: bold;
+}
+#buy-page-buyer>span:first-child{
+    float:left;
+}
+#buy-page-buyer>span:nth-child(2){
+    float:right;
+    color:#09AA5C;
+}
+
+/*구매 아이템 부분*/
+#buy-page-item{
+    height:auto;
+    background-color: chocolate;
+}
+#buy-page-item>div{
+    width:100%;
+}
+#buy-page-item-head{
+    height:50px;
+    background-color: lavender;
+    font-weight: bold;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-item-info-wrap{
+	height:auto;
+	overflow-y:scroll;
+}
+#buy-page-item-info{
+    height:250px;
+    background-color: lavenderblush;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-item-info>a{
+    float:left;
+    width:200px;
+    height:150px;
+    background-color: floralwhite;
+}
+#buy-page-item-info>a>img{
+	display:block;
+	width:80%;
+	height:100%;
+	margin:0 auto;
+}
+
+#buy-page-item-info>#item-desc{
+    float:left;
+    width:200px;
+    height:150px;
+    background-color: fuchsia;
+}
+#item-desc>ul>li{
+    background-color: lawngreen;
+    margin-bottom: 1px;
+}
+#item-desc>ul>li:last-child{
+    font-weight: bold;
+    color: #1088ED;
+}
+#buy-page-item-price{
+    height:50px;
+    background-color: lightcoral;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-item-price>span:first-child{
+    float:left;
+    background-color: papayawhip;
+}
+#buy-page-item-price>span:last-child{
+    float:right;
+    background-color: paleturquoise;
+}
+
+#buy-page-point{
+    height:100px;
+    background-color: cornsilk;
+}
+
+#buy-page-point-head{
+    height:50px;
+    background-color: tan;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-point-head>span:first-child{
+    float:left;
+    background-color: cadetblue;
+}
+#buy-page-point-head>span:nth-child(2){
+    float:right;
+    background-color: chartreuse;
+}
+
+
+#buy-page-point-contents{
+    height:50px;
+    background-color: teal;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-point-contents>span{
+    background-color: yellow;
+}
+#buy-page-point-contents>input{
+    width:300px;
+    height:30px;
+    border-radius: 5px;
+}
+#buy-page-point-contents>button{
+    background-color: rosybrown;
+    cursor: pointer;
+    height:30px;
+    padding:5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+#buy-page-payment{
+    height:200px;
+    background-color: cornflowerblue;
+}
+#buy-page-payment-head{
+    height:50px;
+    background-color: oldlace;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-payment-head>span:first-child{
+    float:left;
+    background-color: cadetblue;
+}
+#buy-page-payment-head>span:nth-child(2){
+    float:right;
+    background-color: chartreuse;
+}
+#buy-page-payment-contents{
+    height:150px;
+    background-color: olive;
+}
+#buy-page-payment-contents>div{
+    background-color: orange;
+    height:30px;
+    margin-bottom: 1px;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-payment-contents>div>input{
+    cursor: pointer;
+}
+#buy-page-payment-contents>div>label{
+    background-color: orangered;
+    position: relative;
+    left:10px;
+    top:0px;
+}
+
+
+#payment-area{
+    height:100px;
+    background-color: darkkhaki;
+}
+#payment-area>h3{
+    text-align: center;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+}
+#payment-area>button{
+    display:block;
+    margin:0 auto;
+    width:340px;
+    height:60px;
+    border: none;
+    cursor: pointer;
+    background-color: #09AA5C;
+    color:#fff;
+    font-size:24px;
+    font-weight: bold;
+}
+
+/*구매페이지 오른쪽부분*/
+#buy-page-contents-right{
+    width:35%;
+    height:500px;
+    background-color: paleturquoise;
+    padding-top:20px;
+    box-sizing: border-box;
+}
+#buy-page-contents-right>div{
+    width:90%;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+
+#buy-page-payment-detail{
+    height:200px;
+    background-color: chocolate;
+}
+#buy-page-payment-detail-head{
+    background-color: rosybrown;
+    height:40px;
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+}
+#buy-page-payment-detail-head>span{
+    background-color: tomato;
+}
+
+#buy-page-payment-detail-contents{
+    background-color: royalblue;
+}
+#buy-page-payment-detail-contents>div{
+    height:40px;
+    background-color: rosybrown;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-payment-detail-contents>div>span:first-child{
+    float:left;
+    background-color: palegreen;
+}
+#buy-page-payment-detail-contents>div>span:nth-child(2){
+    float:right;
+    background-color: palevioletred;
+}
+#buy-page-payment-detail-list>li{
+    height:30px;
+    background-color: plum;
+    margin-bottom: 1px;
+}
+#buy-page-payment-detail-list>li>span{
+    width:auto;
+    height:100%;
+    text-align: center;
+}
+#buy-page-payment-detail-list>li>span:first-child{
+    float:left;
+    background-color: mediumaquamarine;
+}
+#buy-page-payment-detail-list>li>span:nth-child(2){
+    float:right;
+    background-color: mediumslateblue;
+}
+
+#buy-page-point-benefit{
+    height:200px;
+    background-color: cornflowerblue;
+}
+#buy-page-point-benefit-head{
+    background-color: rosybrown;
+    height:40px;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-point-benefit-head>span{
+    background-color: tomato;
+}
+#buy-page-point-benefit-contents{
+    background-color: royalblue;
+}
+#buy-page-point-benefit-contents>div{
+    height:40px;
+    background-color: salmon;
+    padding:10px;
+    box-sizing: border-box;
+}
+#buy-page-point-benefit-contents>div>span:first-child{
+    float:left;
+    background-color: palegreen;
+}
+#buy-page-point-benefit-contents>div>span:nth-child(2){
+    float:right;
+    background-color: palevioletred;
+}
+
+#buy-page-point-detail-list>li{
+    height:30px;
+    background-color: plum;
+    margin-bottom: 1px;
+}
+#buy-page-point-detail-list>li>span{
+    width:auto;
+    height:100%;
+    text-align: center;
+}
+#buy-page-point-detail-list>li>span:first-child{
+    float:left;
+    background-color: mediumaquamarine;
+}
+#buy-page-point-detail-list>li>span:nth-child(2){
+    float:right;
+    background-color: palevioletred;
+}
+
+
+#buy-page-footer{
+    width:100%;
+    height:100px;
+    background-color: hotpink;
+}

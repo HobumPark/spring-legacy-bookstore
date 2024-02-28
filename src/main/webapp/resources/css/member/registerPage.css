@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+
+#wrap{
+	width:1200px;
+	height:1000px;
+	background-color:aqua;
+	margin:50px auto;
+}
+#wrap>h1{
+	text-align:center;
+	background-color:darkgoldenrod;
+}
+#wrap>h1>b{
+	color:#0E5BE5;
+	font-weight:bold;
+}
+#sign-up-wrap{
+	width:1000px;
+	height:900px;
+	background-color:aquamarine;
+	margin:0 auto;
+}
+/*아이디 영역*/
+td{
+	padding:10px;
+	box-sizing:border-box;
+}
+#sign-up-wrap>tr>td:first-child>b{
+	color:#0E5BE5;
+	font-weight:bold;
+}
+
+#sign-up-wrap>#id-wrap{
+	width:1000px;
+	height:150px;
+	background-color:antiquewhite;
+}
+#id-wrap>#id-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#id-wrap>#id-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#id-wrap>#id-contents>#id-contents01{
+	width:100%;
+	height:50%;
+	background-color:darkseagreen;
+}
+#id-contents01>input{
+	width:180px;
+	height:35px;
+	background-color:#FFF8DC;
+}
+#id-contents01>button{
+	width:90px;
+	height:40px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#444444;
+	border-radius:5px;
+	border:none;
+	cursor:pointer;
+}
+
+#id-wrap>#id-contents>#id-contents02{
+	width:100%;
+	height:50%;
+	background-color:darkslateblue;
+}
+#id-contents02>span{
+	display:block;
+	width:95%;
+	height:60px;
+	background-color:#FFFDF3;
+	text-align:center;
+	padding-top:20px;
+	box-sizing:border-box;
+}
+
+/*패스워드 영역*/
+#sign-up-wrap>#pw-wrap{
+	width:1000px;
+	height:65px;
+	background-color:burlywood;
+}
+
+#pw-wrap>#pw-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+
+#pw-wrap>#pw-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+
+#pw-wrap>#pw-contents>input{
+	width:180px;
+	height:35px;
+	background-color:#ffffff;
+}
+#pw-wrap>#pw-contents>span{
+	background-color:#ffffff;
+}
+
+/*패스워드 확인 영역*/
+#sign-up-wrap>#pw-confirm-wrap{
+	width:1000px;
+	height:65px;
+	background-color:brown;
+}
+#pw-confirm-wrap>#pw-confirm-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#pw-confirm-wrap>#pw-confirm-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#pw-confirm-wrap>#pw-confirm-contents>input{
+	width:180px;
+	height:35px;
+	background-color:#ffffff;
+}
+
+/*이름 영역*/
+#sign-up-wrap>#name-wrap{
+	width:1000px;
+	height:50px;
+	background-color:blueviolet;
+}
+#name-wrap>#name-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#name-wrap>#name-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#name-wrap>#name-contents>input{
+	width:80px;
+	height:35px;
+}
+#name-wrap>#name-contents>select{
+	width:80px;
+	height:35px;
+}
+
+/*휴대폰 번호 영역*/
+#sign-up-wrap>#phone-wrap{
+	width:1000px;
+	height:65px;
+	background-color:cadetblue;
+}
+#phone-wrap>#phone-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#phone-wrap>#phone-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#phone-wrap>#phone-contents>select{
+	width:80px;
+	height:35px;
+}
+#phone-wrap>#phone-contents>input{
+	width:80px;
+	height:35px;
+}
+
+
+/*주소 영역*/
+#sign-up-wrap>#address-wrap{
+	width:1000px;
+	height:155px;
+	background-color:chartreuse;
+}
+#address-wrap>#address-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#address-wrap>#address-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#address-contents>#address-contents01{
+	width:100%;
+	height:33%;
+	background-color:darksalmon;
+}
+#address-contents>#address-contents01>input{
+	width:180px;
+	height:35px;
+	background-color:#F6F6F7;
+}
+#address-contents>#address-contents01>button{
+	width:90px;
+	height:40px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#444444;
+	border-radius:5px;
+	border:none;
+	cursor:pointer;
+}
+
+#address-contents>#address-contents02{
+	width:100%;
+	height:33%;
+	background-color:darkgoldenrod;
+}
+#address-contents>#address-contents02>input{
+	width:690px;
+	height:35px;
+	background-color:#F6F6F7;
+}
+#address-contents>#address-contents03{
+	width:100%;
+	height:33%;
+	background-color:deepskyblue;
+}
+#address-contents>#address-contents03>input{
+	width:200px;
+	height:35px;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+
+/*이메일 영역*/
+#sign-up-wrap>#email-wrap{
+	width:1000px;
+	height:65px;
+	background-color:chocolate;
+}
+#email-wrap>#email-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#email-wrap>#email-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+#email-contents>input{
+	width:200px;
+	height:35px;
+}
+#email-contents>select{
+	width:110px;
+	height:35px;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+
+/*이메일 수신체크 영역*/
+#sign-up-wrap>#email-sns-agree-wrap{
+	width:1000px;
+	height:150px;
+	background-color:cornflowerblue;
+}
+#email-sns-agree-wrap>#email-sns-label{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:cornsilk;
+}
+#email-sns-agree-wrap>#email-sns-contents{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:crimson;
+}
+
+#email-sns-contents>#email-sns-contents01{
+	width:100%;
+	height:40%;
+	background-color:firebrick;
+}
+#email-sns-contents>#email-sns-contents02{
+	width:100%;
+	height:60%;
+	background-color:forestgreen;
+	padding:10px 10px;
+	box-sizing:border-box;
+	font-size:15px;
+}
+
+#button-group{
+	width:100%;
+	height:100px;
+	background-color:hotpink;
+	text-align:center;
+}
+
+#button-group>#button-group-inner{
+	display:inline-block;
+	background-color:indigo;
+}
+
+#button-group-inner>button{
+	width:200px;
+	height:40px;
+	color:#ffffff;
+	border-radius:10px;
+	cursor:pointer;
+}
+#button-group-inner>#signup-button{
+	background-color: navy;
+}
+#button-group-inner>#move-home-button{
+	background-color: #1769ab;
+}
+
+#register-btn-area{
+	width:1000px;
+	height:50px;
+	background-color:aquamarine;
+	margin:0 auto;
+	text-align:center;
+}
+#register-btn-area-inner{
+	display:inline-block;
+	background-color:antiquewhite;
+}
+
+#register-btn-area-inner>button{
+	width:200px;
+	height:50px;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	border-radius:10px;
+	cursor:pointer;
+}
+
+#register-btn-area-inner>button:first-child{
+	background-color:#0061ae;
+}
+#register-btn-area-inner>button:nth-child(2){
+	background-color:#4b9bd6;;
+}

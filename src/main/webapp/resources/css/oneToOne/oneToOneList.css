@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+
+#wrap{
+	width:100%;
+	height:1600px;
+	background-color:aqua;
+	margin:0 auto;
+}
+
+/*헤더*/
+#header{
+	width:100%;
+	height:150px;
+	background-color:aquamarine;
+	
+}
+
+#contents{
+	width:100%;
+	height:1000px;
+	background-color:brown;
+}
+
+#contents>#contents-inner{
+	width:1200px;
+	height:1000px;
+	background-color:olive;
+	margin:0 auto;
+}
+
+/*콘텐츠 왼쪽*/
+#contents-inner>#contents-left{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:orange;
+}
+#contents-left>h1>a{
+	color:#000000;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:3px;
+	box-sizing:border-box;
+}
+#contents-left>h2>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+#contents-left>h3{
+	width:200px;
+	height:40px;
+	background-color:moccasin;
+	margin-bottom:1px;
+}
+#contents-left>h3>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+
+#often-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:teal;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+
+#one-to-one-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:tomato;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+#main{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#often{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#one-to-one{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#notice{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#tax{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#law{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+
+/*콘텐츠 오른쪽*/
+#contents-inner>#contents-right{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:orchid;
+}
+
+/*푸터*/
+#footer{
+	width:100%;
+	height:200px;
+	background-color:yellow;
+	margin:0 auto;
+}

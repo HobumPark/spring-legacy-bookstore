@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+
+
+#ad_top{
+	position:relative;
+}
+
+#ad_top>img{
+	width:100%;
+	height:70px;
+}
+
+#ad_top>#close-btn{
+	position:absolute;
+	right:10%;
+	top:50%;
+}
+
+#wrap{
+	width:100%;
+	height:1000px;
+	background-color:aqua;
+	margin:0 auto;
+}
+
+#search>form>#search-input-area>#searchText{
+	border:none;
+	width:400px;
+	color: #333;
+	font-weight:bold;
+	position:relative;
+	top:10px;
+	left:20px;
+}
+#searchText:focus{
+    outline: none;
+}
+#searchText::placeholder {
+  color: #5e6b9e;
+  font-weight:bold;
+}
+
+#search>form>#search-btn{
+	background-image:url("../../images/home/btn_search4.png");
+	background-repeat: no-repeat;
+	width:55px;
+	height:45px;
+	float:right;
+	position:relative;
+	top:-35px;
+	left:-20px;
+	border:none;
+	cursor:pointer;
+}
+
+
+/*헤더 바텀 오른쪽*/
+#header>#header-bottom>#right{
+	float:right;
+	width:30%;
+	height:100px;
+	background-color:khaki;
+}
+
+#header>#header-bottom>#right>#tab{
+	width:220px;
+	height:64px;
+	background-color:chocolate;
+}
+#header>#header-bottom>#right>#tab>img{
+	display:none;
+}
+#header>#header-bottom>#right>#tab>img:first-child{
+	display:block;
+}
+#header>#header-bottom>#right>#tab-btn{
+	width: 140px;
+    height: 35px;
+    background-color:cadetblue;
+    padding:5px 10px;
+    box-sizing:border-box;
+}
+#header>#header-bottom>#right>#tab-btn>.prev{
+	display:inline-block;
+	width: 18px;
+    height: 15px;
+	background: #fff url("../../images/home/nav6_btn_sprite.png") no-repeat 0 -82px;
+	border: 1px solid #d5d5d5;
+	cursor: pointer;
+	margin-right:-5px;
+}
+#header>#header-bottom>#right>#tab-btn>.next{
+	display:inline-block;
+	width: 18px;
+    height: 15px;
+	background: #fff url("../../images/home/nav6_btn_sprite.png") no-repeat -40px -82px;
+	border: 1px solid #d5d5d5;
+	cursor: pointer;
+}
+
+/*네비게이션 시작*/
+#nav{
+	width:1200px;
+	height:100px;
+	background-color:palegreen;
+}
+
+/*네비게이션 시작*/
+#nav{
+	width:1200px;
+	height:100px;
+	background-color:palegreen;
+	margin:0 auto;
+}
+
+#nav>#nav-left{
+	float:left;
+	/*width:700px;*/
+	height:100px;
+	background-color:silver;
+}
+#nav>#nav-left>ul>li{
+	float:left;
+}
+#nav>#nav-left>ul>li{
+	/*width:100px;*/
+	height:30px;
+}
+#nav>#nav-left>ul>li>a{
+	/*width:100px;*/
+	height:100%;
+	background-color:#5e6b9e;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+	padding:10px;
+	padding-top:20px;
+	/*box-sizing:border-box;*/
+	display:block;
+}
+#nav>#nav-left>ul>li:first-child>a>span{
+	width:30px;
+	height:5px;
+	background-color:white;
+	display:block;	
+	margin-bottom:5px;
+}
+
+#nav>#nav-right{
+	float:right;
+	/*width:400px;*/
+	height:100px;
+	background-color:gold;
+}
+#nav>#nav-right>ul>li{
+	float:left;
+	height:30px;
+	position:relative;
+}
+#nav>#nav-right>ul>li>a{
+	/*width:100px;*/
+	height:100%;
+	background-color:#5e6b9e;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+	padding:10px;
+	padding-top:20px;
+	/*box-sizing:border-box;*/
+	display:block;
+}
+#nav>#nav-right>ul>li>a::after{
+	content:'';
+	width:1px;
+	height:15px;
+	display:block;
+	background-color:#777;
+	position:absolute;
+}
+#nav>#nav-right>ul>li:first-child>a::after{
+	left:70px;
+	top:20px;
+}
+#nav>#nav-right>ul>li:nth-child(2)>a::after{
+	left:70px;
+	top:20px;
+}
+#nav>#nav-right>ul>li:nth-child(3)>a::after{
+	left:70px;
+	top:20px;
+}
+#nav>#nav-right>ul>li:nth-child(4)>a::after{
+	content:none;
+}
+
+/**/
+
+#contents{
+	width:1200px;
+	height:600px;
+	background-color:green;
+	margin:0 auto;
+}
+
+#contents>h1{
+	background-color:wheat;
+	border-bottom:2px solid #666;
+	padding-left:30px;
+	box-sizing:border-box;
+}
+
+#contents>#login-area{
+	width:780px;
+	height:450px;
+	background-color:gold;
+	position:relative;
+	top:50px;
+	margin:0 auto;
+}
+#contents>#login-area>#login-area-top{
+	width:760px;
+	height:350px;
+	background-color:goldenrod;
+}
+
+#contents>#login-area>#login-area-top>#login-area-top-left{
+	float:left;
+	width:360px;
+	height:340px;
+	background-color:firebrick;
+}
+#contents>#login-area>#login-area-top>#login-area-top-left>#login-tab{
+	width:320px;
+	height:200px;
+	background-color:royalblue;
+	border:1px solid blue;
+	padding-left:10px;
+	padding-top:10px;
+	box-sizing:border-box;
+}
+
+#login-area-top-left>#login-tab>#login-tab-btn{
+	width:90%;
+	height:30px;
+	border-bottom: 1px solid #99bddd;
+	background-color:indigo;
+	margin-bottom:10px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+
+#bar{
+	width:1px;
+	height:10px;
+	background-color:#777;
+	display:inline-block;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#login-form>form>#id{
+	width:227px;
+	height:28px;
+	font-size:11px;
+	margin-bottom:8px;
+	display:block;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+#login-form>form>#pw{
+	width:227px;
+	height:28px;
+	font-size:11px;
+	margin-bottom:8px;
+	display:block;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+#login-form>form{
+	position:relative;
+	background-color:mediumslateblue;
+}
+#login-form>form>#login-btn{
+	width:66px;
+	height:62px;
+	background-color:#0277d3;
+	border: 1px solid #0362ad;
+	position:absolute;
+	right:5px;
+	top:5px;	
+	cursor:pointer;
+}
+
+#login-other1{
+	background-color:mediumvioletred;
+	margin-bottom:10px;
+}
+#login-other2{
+	background-color:moccasin;
+	position:relative;
+	width:300px;
+	height:40px;
+}
+
+#login-other2>#naver-login{
+	width:115px;
+	height:36px;
+	background-color:white;
+	display:inline-block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#777;
+	font-size:13px;
+	color:#ffffff;
+	background-color:#666;
+	padding:2px 5px;
+	box-sizing:border-box;
+}
+
+#login-other2>#kyobo-signup{
+	width:169px;
+	height:36px;
+	background-color:#666;
+	display:inline-block;
+	position:absolute;
+	left:120px;
+	top:0px;
+	font-size:13px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	padding-top:10px;
+	box-sizing:border-box;
+}
+
+#contents>#login-area>#login-area-top>#login-area-top-left>#login-tab-bottom{
+	width:360px;
+	height:130px;
+	background-color:rosybrown;
+}
+
+#contents>#login-area>#login-area-top>#login-area-top-right{
+	float:left;
+	width:380px;
+	height:340px;
+	background-color:rebeccapurple;
+}
+#contents>#login-area>#login-area-bottom{
+	width:760px;
+	height:100px;
+	background-color:gainsboro;
+}
+/*푸터*/
+#footer{
+	width:1200px;
+	height:200px;
+	background-color:yellow;
+}
+
+#footer>#footer-left{
+	float:left;
+}
+#footer>#footer-right{
+	float:left;
+}

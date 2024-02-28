@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+
+
+#ad-top{
+	position:relative;
+	width:100%;
+	height:70px;
+	background-color:blue;
+}
+
+#ad-top>img{
+	width:100%;
+	height:100%;
+}
+
+#ad-top>#close-btn{
+	position:absolute;
+	left:90%;
+	top:15%;
+	cursor:pointer;
+}
+
+#wrap{
+	width:100%;
+	height:1850px;
+	background-color:aqua;
+	margin:0 auto;
+}
+
+/*헤더*/
+#header{
+	width:100%;
+	height:150px;
+	background-color:aquamarine;
+	
+}
+
+#contents{
+	width:100%;
+	height:1300px;
+	background-color:brown;
+}
+
+#contents>#contents-inner{
+	width:1200px;
+	height:1300px;
+	background-color:olive;
+	margin:0 auto;
+}
+
+/*콘텐츠 왼쪽*/
+#contents-inner>#contents-left{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:orange;
+}
+#contents-left>h1>a{
+	color:#000000;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:3px;
+	box-sizing:border-box;
+}
+#contents-left>h2>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+#contents-left>h3{
+	width:200px;
+	height:40px;
+	background-color:moccasin;
+	margin-bottom:1px;
+}
+#contents-left>h3>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+
+#often-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:teal;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+
+#one-to-one-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:tomato;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+#main{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#often{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#one-to-one{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#notice{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#tax{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#law{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+
+/*콘텐츠 오른쪽*/
+#contents-inner>#contents-right{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:orchid;
+}
+#contents-right>div{
+	margin:5px auto;
+}
+/*콘텐츠 오른쪽 - 제목*/
+#contents-right>#head{
+	width:95%;
+	height:150px;
+	background-color:chocolate;
+}
+#head>#head-top{
+	display:block;
+	width:100%;
+	height:50%;
+	background-color:floralwhite;
+	padding-top:20px;
+	box-sizing:border-box;
+}
+#head>#head-top>h1{
+	background-color:darkturquoise;
+	padding-left:20px;
+	box-sizing:border-box;
+}
+#head>#head-bottom{
+	display:block;
+	width:100%;
+	height:50%;
+	background-color:fuchsia;
+	padding-top:20px;
+	box-sizing:border-box;
+}
+#head>#head-bottom>h1{
+	background-color:hotpink;
+	padding-left:30px;
+	box-sizing:border-box;
+}
+#head>#head-bottom>h1>button{
+	width:130px;
+	height:30px;
+	border-radius:20px;
+	border:1px solid #474C98;
+	color:#474C98;
+	float:right;
+	
+	position:relative;
+	top:10px;
+}
+/*콘텐츠 오른쪽 - 자주묻는 질문*/
+#contents-right>#question-many{
+	width:95%;
+	height:200px;
+	background-color:coral;
+}
+#question-many>span{
+	margin-bottom:2px;
+}
+#question-many>#head{
+	display:block;
+	width:100%;
+	height:15%;
+	background-color:palegoldenrod;
+}
+#question-many>#head>h1{
+	font-size:20px;
+}
+#question-many>#head>h1>a{
+	font-size:14px;
+	color:#595959;
+	float:right;
+}
+
+#question-many>#contents{
+	display:block;
+	width:100%;
+	height:40%;
+	background-color:palegreen;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+#question-many>#contents>span{
+	display:block;
+	width:90%;
+	height:90%;
+	background-color:#888;
+	border-radius:5px;
+	padding:10px 150px;
+	box-sizing:border-box;
+	margin:0px auto;
+}
+#question-many>#contents>span>input{
+	width:400px;
+	height:44px;
+	border-radius:5px;
+	border: 1px solid #d5d5d5;
+	border:none;
+}
+#question-many>#contents>span>button{
+	width:90px;
+	height:44px;
+	border-radius:5px;
+	background-color:#5055B1;
+	color:#ffffff;
+	border:none;
+}
+
+#question-many>#menu{
+	display:block;
+	width:100%;
+	height:40%;
+	background-color:paleturquoise;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+#question-many>#menu>#list-box{
+	display:block;
+	width:90%;
+	height:90%;
+	background-color:#888;
+	border-radius:5px;
+	padding:10px 70px;
+	box-sizing:border-box;
+	margin:0px auto;
+}
+#list-box>ul>li{
+	float:left;
+	margin-left:60px;
+	margin-bottom:10px;
+}
+#list-box>ul>li>a{
+	color:#000000;
+}
+
+/*콘텐츠 오른쪽 - 1대1 문의*/
+#contents-right>#question-each{
+	width:95%;
+	height:200px;
+	background-color:cornsilk;
+}
+#question-each>h1{
+	font-size:20px;
+	width:100%;
+	height:10%;
+	background-color:palegreen;
+}
+#question-each>#cont{
+	width:100%;
+	height:90%;
+	background-color:antiquewhite;
+}
+#cont>#left{
+	float:left;
+	width:33%;
+	height:100%;
+	background-color:tan;
+}
+#cont>#mid{
+	float:left;
+	width:33%;
+	height:100%;
+	background-color:teal;
+}
+#cont>#right{
+	float:left;
+	width:33%;
+	height:100%;
+	background-color:tomato;
+}
+
+
+
+/*콘텐츠 오른쪽 - 공지사항*/
+#contents-right>#notice{
+	width:95%;
+	height:200px;
+	background-color:darkgoldenrod;
+}
+#notice>div:first-child{
+	width:100%;
+	height:20%;
+	background-color:lawngreen;
+}
+#notice>div:first-child>span{
+	color:#000000;
+	font-size:20px;
+	font-weight:bold;
+}
+#notice>div:first-child>a{
+	color:#595959;
+	float:right;
+}
+
+#notice>div:nth-child(2){
+	width:100%;
+	height:80%;
+	background-color:lavenderblush;
+}
+
+/*콘텐츠 오른쪽 - 출판사 연락처 안내*/
+#contents-right>#publisher-contact{
+	width:95%;
+	height:100px;
+	background-color:darkmagenta;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+#publisher-contact>#input-box{
+	display:block;
+	width:90%;
+	height:90%;
+	background-color:#888;
+	border-radius:5px;
+	padding:20px 50px;
+	box-sizing:border-box;
+	margin:0px auto;
+}
+#input-box>b{
+	display:inline-block;
+	font-size:16px;
+	color:#000000;
+	margin-right:20px;
+}
+#input-box>input{
+	display:inline-block;
+	width:400px;
+	height:44px;
+	border-radius:5px;
+}
+
+/*콘텐츠 오른쪽 - 서비스 바로가기*/
+#contents-right>#service-quick-menu{
+	width:95%;
+	height:400px;
+	background-color:darkorange;
+}
+#service-quick-menu>h1{
+	color:#000000;
+}
+#service-quick-menu>div{
+	width:100%;
+	height:90%;
+	background-color:slateblue;
+	padding:10px 20px;
+	box-sizing:border-box;
+}
+#service-quick-menu>div>ul>li{
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+#service-quick-menu>div>ul>li>a{
+	display:block;
+	font-size:13px;
+	width:180px;
+	height:100px;
+	background-color:#ffffff;
+	color:#000000;
+}
+#service-quick-menu>div>ul>li>a>span{
+	display:inline-block;
+	border:1px solid #777;
+	border-radius:100%;
+	width:65px;
+	height:65px;
+	text-align:center;
+}
+#service-quick-menu>div>ul>li>a>span>img{
+	width:90%;
+	height:90%;
+	display:inline-bock;
+}
+
+/*푸터*/
+#footer{
+	width:100%;
+	height:200px;
+	background-color:yellow;
+	margin:0 auto;
+}

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+
+#contents{
+	width:100%;
+	height:1050px;
+	background-color:brown;
+}
+
+#contents>#contents-inner{
+	width:1200px;
+	height:1000px;
+	background-color:olive;
+	margin:0 auto;
+}
+
+/*콘텐츠 왼쪽*/
+#contents-inner>#contents-left{
+	float:left;
+	width:20%;
+	height:100%;
+	background-color:orange;
+}
+#contents-left>h1>a{
+	color:#000000;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:3px;
+	box-sizing:border-box;
+}
+#contents-left>h2>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+#contents-left>h3{
+	width:200px;
+	height:40px;
+	background-color:moccasin;
+	margin-bottom:1px;
+}
+#contents-left>h3>a{
+	color:#000000;
+	font-size:15px;
+	font-weight:bold;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+
+#often-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:teal;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+
+#one-to-one-question>li>a{
+	color:#000000;
+	font-size:14px;
+	background-color:tomato;
+	display:block;
+	width:200px;
+	height:40px;
+	padding:5px 5px;
+	box-sizing:border-box;
+}
+#main{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#often{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#one-to-one{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#notice{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#tax{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+#law{
+	display:block;
+	width:200px;
+	height:40px;
+	background-color:tan;
+}
+
+/*콘텐츠 오른쪽*/
+#contents-inner>#contents-right{
+	float:left;
+	width:80%;
+	height:100%;
+	background-color:orchid;
+}
+/*공지사항 제목 부분*/
+#contents-right>#notice-head{
+	width:100%;
+	height:20%;
+	background-color:palered;
+}
+#notice-head>#notice-head-top{
+	width:100%;
+	height:40%;
+	background-color:mediumblue;
+}
+#notice-head-top>h1{
+	width:200px;
+	height:40px;
+	background-color:mediumpurple;
+	display:inline-block;
+}
+#notice-head-top>#btn-group{
+	background-color:mediumturquoise;
+	float:right;
+}
+#btn-group>button{
+	background-color:#ffffff;
+	border-radius:10px;
+	padding:3px;
+	display:inline-block;
+}
+
+#notice-head>#notice-head-bottom{
+	width:100%;
+	height:60%;
+	background-color:mediumgreen;
+}
+#notice-head-bottom>#input-area{
+	width:900px;
+	height:80px;
+	background-color: #777;
+	
+}
+#input-area>input{
+	width:400px;
+	height:45px;
+	border-radius:5px;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+#input-area>button{
+	width:90px;
+	height:45px;
+	background-color: #5055B1;
+	color:#ffffff;
+	font-weight:bold;
+	border-radius:5px;
+	border:none;
+	text-align:center;
+}
+
+/*공지사항 메인*/
+#contents-right>#notice-main{
+	width:100%;
+	height:80%;
+	background-color:palegreen;
+}
+#notice-main>#notice-head{
+	width:100%;
+	height:5%;
+	background-color:mistyrose;
+}
+#notice-main>#notice-board{
+	width:100%;
+	height:95%;
+	background-color:moccasin;
+	font-size:14px;
+}
+#notice-board>#notice-board-list{
+	width:100%;
+	height:90%;
+	background-color:mediumorchid;
+	padding:30px 30px;
+	box-sizing:border-box;
+}
+#notice{
+	width:95%;
+	height:50px;
+	background-color:moccasin;
+	margin-bottom:1px;
+}
+#notice>span{
+	float:left;
+	text-align:center;
+	padding-top:7px;
+	box-sizing:border-box;
+}
+#notice>span:first-child{
+	width:5%;
+	height:100%;
+	background-color:darkorange;
+}
+#notice>span:nth-child(2){
+	width:65%;
+	height:100%;
+	background-color:darkblue;
+}
+#notice>span:nth-child(3){
+	width:10%;
+	height:100%;
+	background-color:darkgray;
+}
+#notice>span:nth-child(4){
+	width:10%;
+	height:100%;
+	background-color:darkred;
+}
+#notice>span:nth-child(5){
+	width:10%;
+	height:100%;
+	background-color:darkturquoise;
+}
+
+#notice-board>#pagination{
+	width:100%;
+	height:10%;
+	background-color:mediumspringgreen;
+	text-align:center;
+}
+#pagination>#pagination-inner{
+	display:inline-block;
+	background-color:mediumpurple;
+}
+#pagination-inner>#page{
+	display:inline-block;
+	width:35px;
+	height:35px;
+	border-radius:5px;
+	text-align:center;
+	padding-top:7px;
+	box-sizing:border-box;
+	border:1px solid black;
+	cursor:pointer;
+}
+#pagination-inner>#page>a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#333333;
+}
+
+#pagination-inner>#page:hover{
+	background-color:#777777;
+	color:#ffffff;
+}
+.active{
+	font-weight:bold;
+	color:#777777 !important;
+	background-color:#ffffff !important;
+}
+

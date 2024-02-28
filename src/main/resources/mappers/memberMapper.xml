@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="spring.com.mapper.memberMapper">
+
+<select id="selectMember" resultType="memberVO">
+        SELECT * FROM kyobo_member;
+</select>
+
+<select id="loginCheck" resultType="String">
+        SELECT id FROM kyobo_member where pw=#{pw};
+</select>
+
+<insert id="signUpMember" parameterType="spring.com.dto.MemberVO"> 
+insert into kyobo_member ( id,pw ) values ( #{id},#{pw} );
+</insert>
+<!-- insert는 자동으로 int를 반환해준다. -->
+
+<select id="readMember" resultType="spring.com.dto.MemberVO">
+        SELECT * FROM kyobo_member where id=#{id};
+</select>
+
+<update id="updatePassword" parameterType="hashmap">
+        update kyobo_member set pw=#{pw} where id=#{id};
+</update>
+
+<update id="updateMemberInfo" parameterType="spring.com.dto.MemberVO">
+        update kyobo_member set pw=#{pw}, email=#{email}, address=#{address} where id=#{id};
+</update>
+
+<select id="selectId" resultType="String" parameterType="String">
+        SELECT id from kyobo_member where id=#{id};
+</select>
+
+<select id="selectMemberWhereId" resultType="spring.com.dto.MemberVO" parameterType="String">
+        SELECT * from kyobo_member where id=#{id};
+</select>
+
+<insert id="registerMember" parameterType="spring.com.dto.MemberVO"> 
+	insert into kyobo_member(name,bornDate,id,pw,email,phoneNumber,provider,address) values ( #{name},#{bornDate},#{id},#{pw},#{email},#{phoneNumber},#{provider},#{address});
+</insert>
+
+</mapper>

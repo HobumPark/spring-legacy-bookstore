@@ -1,0 +1,57 @@
+@charset "EUC-KR";
+
+#check-radio-form{
+	width:80%;
+	background-color:#777;
+	color:black;
+	font-weight:normal;
+	font-size:24px;
+	margin:0 auto;
+}
+
+label>b{
+	color:red;
+	font-weight:bold;
+}
+
+#check-area1{
+	
+	height:60px;
+	background-color:aqua;
+	font-weight:bold;
+	margin:0 auto;
+}
+#check-area2{
+	width:100%;
+	height:120px;
+	background-color:aquamarine;
+}
+#check-area2>span{
+	display:block;
+}
+
+#check-area3{
+	width:100%;
+	height:180px;
+	background-color:brown;
+}
+#check-area3>span{
+	display:block;
+}
+
+#check-area4{
+	width:100%;
+	height:240px;
+	background-color:burrlywood;
+}
+#check-area4>span{
+	display:block;
+}
+#agree-btn{
+	width:250px;
+	height:70px;
+	background-color: #41b327;
+	color:#fff;
+	font-size:20px;
+	margin:0 auto;
+}

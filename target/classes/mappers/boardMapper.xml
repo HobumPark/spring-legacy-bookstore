@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="spring.com.mapper.boardMapper">
+
+<!-- 공지사항 게시판 -->
+<select id="selectNoticeBoard" resultType="NoticeBoardVO">
+        SELECT * from notice_board;
+</select>
+
+<select id="selectNoticeBoardCount" resultType="int">
+        SELECT COUNT(*) from notice_board;
+</select>
+
+<!-- select * from notice_board limit 0,10; -->
+<!-- select * from notice_board limit 10,10; -->
+<select id="selectNoticeBoardLimit" parameterType="int" resultType="NoticeBoardVO">
+        SELECT * FROM notice_board limit #{page},10;
+</select>
+
+<select id="selectNoticeBoardByNo" parameterType="int" resultType="NoticeBoardVO">
+        SELECT * FROM notice_board where no=#{no};
+</select>
+
+<!-- 사용자 게시판 -->
+<select id="selectUserBoard" resultType="UserBoardVO">
+        SELECT * from user_board;
+</select>
+
+<select id="selectUserBoardCount" resultType="int">
+        SELECT COUNT(*) from user_board;
+</select>
+
+<!-- select * from user_board limit 0,10; -->
+<!-- select * from user_board limit 10,10; -->
+<select id="selectUserBoardLimit" parameterType="int" resultType="UserBoardVO">
+        SELECT * FROM user_board order by no desc limit #{page},10;
+</select>
+
+<select id="selectUserBoardByNo" parameterType="int" resultType="UserBoardVO">
+        SELECT * FROM user_board where no=#{no};
+</select>
+
+<insert id="insertUserBoard" parameterType="UserBoardVO"> 
+		insert into user_board ( id,password,name,title,contents,writeDate,fileAttach,fileName ) 
+		values ( #{id},#{password},#{name},#{title},#{contents},#{writeDate},#{fileAttach},#{fileName});
+</insert>
+
+<update id="updateUserBoard" parameterType="UserBoardVO">
+        update user_board set title=#{title}, contents=#{contents} where no=#{no};
+</update>
+
+<delete id="deleteUserBoard" parameterType="int">
+        delete from user_board where no=#{no};
+</delete>
+<!-- 댓글 관련 -->
+<select id="selectUserBoardCommentList" parameterType="int" resultType="UserBoardComment">
+        SELECT * FROM user_board_comment where bno=#{no};
+</select>
+
+<select id="selectUserBoardCommentListLimit" parameterType="hashmap" resultType="UserBoardComment">
+        SELECT * FROM user_board_comment where bno=#{no} limit #{page},5;
+</select>
+
+<select id="selectUserBoardCommentListCount" parameterType="int" resultType="int">
+        SELECT COUNT(*) FROM user_board_comment where bno=#{no};
+</select>
+
+<insert id="insertUserBoardComment" parameterType="UserBoardComment"> 
+		insert into user_board_comment ( bno,writer,contents ) values ( #{bno},#{writer},#{contents} );
+</insert>
+
+<!-- 대댓글 관련 -->
+<select id="selectNestedCommentList" parameterType="int" resultType="NestedComment">
+        SELECT * FROM nested_comment where cid=#{cid};
+</select>
+
+
+<!-- 1대1 게시판 -->
+
+</mapper>
