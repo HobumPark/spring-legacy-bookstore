@@ -1,3 +1,7 @@
+Spring Legacy 교보문고 책검색 사이트
+홈, 검색, 책상세보기, 게시판 (글목록, 글상세보기, 글쓰기, 글삭제), 회원가입, 로그인, 회원정보수정
+Spring Legacy + JSP + MyBatis + MySQL
+
 ![GOMCAM 20230425_1523200290](https://github.com/HobumPark/spring-legacy-bookstore/assets/25094629/2c296a6f-489f-4fac-ae03-b3e5ed8db64f)
 ![GOMCAM 20230203_1633520639](https://github.com/HobumPark/spring-legacy-bookstore/assets/25094629/2d194aa0-df73-47b6-aa01-b6a48392f5e6)
 ![GOMCAM 20230203_1633470977](https://github.com/HobumPark/spring-legacy-bookstore/assets/25094629/935d7530-f24b-40a9-a83d-e6f4977cf5dc)
